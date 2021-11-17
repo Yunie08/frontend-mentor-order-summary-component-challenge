@@ -1,0 +1,13 @@
+{
+  "name": "order-summary-component-main",
+  "version": "1.0.0",
+  "description": "Front end mentor challenge \"Order summary component challenge\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./style.css",
+    "prefix": "postcss ./style.css --use autoprefixer -d ./prefixed/"
+  },
+  "author": "Ambre Gorias",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
