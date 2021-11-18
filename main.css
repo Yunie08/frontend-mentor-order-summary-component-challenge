@@ -52,7 +52,7 @@ h2 {
 a, button {
   font-family: "Red Hat Display Bold", Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .order-summ {
@@ -61,6 +61,7 @@ a, button {
   background-color: white;
   border-radius: 20px;
   margin: 100px 0 100px 0;
+  box-shadow: #a8beff 0px 30px 30px -20px;
 }
 .order-summ__head-img {
   border-top-left-radius: 20px;
@@ -80,8 +81,8 @@ a, button {
 .order-summ__content p {
   padding: 2.4rem 0 2.4rem 0;
 }
-.order-summ .button {
-  margin: 3.2rem 0 3.4rem 0;
+.order-summ button {
+  margin: 3.2rem 0 3.2rem 0;
   border: none;
   padding: 1.6rem 0 1.6rem 0;
   border-radius: 10px;
@@ -89,9 +90,18 @@ a, button {
   color: white;
   box-shadow: 0px 15px 17px #c2d1ff;
 }
+.order-summ button:active {
+  background-color: #766cea;
+}
+.order-summ button:hover {
+  cursor: pointer;
+}
 .order-summ a {
   text-decoration: none;
   color: inherit;
+}
+.order-summ a:active {
+  color: #1f2f56;
 }
 
 .plan-summary {
@@ -121,6 +131,9 @@ a, button {
   align-self: center;
   text-align: right;
   color: #3829e0;
+}
+.plan-summary .change-link a:active {
+  color: #766cea;
 }
 
 /*# sourceMappingURL=main.css.map */

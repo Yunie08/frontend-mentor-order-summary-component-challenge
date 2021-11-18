@@ -4,6 +4,7 @@ $colour-secondary: hsl(245, 75%, 52%);
 $colour-tertiary: hsl(225, 100%, 98%);
 $colour-fourth: hsl(224, 23%, 55%);
 $colour-fifth: hsl(223, 47%, 23%);
+$colour-active : lighten($color: $colour-secondary, $amount: 15%);
 
 $border-radius : 20px;
 $generic-fonts : Arial, Helvetica, sans-serif;
@@ -67,7 +68,7 @@ h2 {
 a, button {
     font-family: 'Red Hat Display Bold', $generic-fonts;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 
@@ -77,7 +78,7 @@ a, button {
     background-color: white;
     border-radius: $border-radius;
     margin: 100px 0 100px 0;
-
+    box-shadow: darken($color:$colour-tertiary, $amount: 15) 0px 30px 30px -20px;
     &__head-img {
         border-top-left-radius: $border-radius;
         border-top-right-radius: $border-radius;
@@ -97,19 +98,28 @@ a, button {
             padding: 2.4rem 0 2.4rem 0;
         }
     }
-    .button {
-        margin: 3.2rem 0 3.4rem 0;
+    button {
+        margin: 3.2rem 0 3.2rem 0;
         border: none;
         padding: 1.6rem 0 1.6rem 0;
         border-radius: calc($border-radius - 10px);
         background-color: $colour-secondary;
         color: white;
         box-shadow: 0px 15px 17px darken($color:$colour-tertiary, $amount: 10);
+        &:active {
+            background-color: $colour-active;
+        }
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     a {
         text-decoration: none;
         color: inherit;
+        &:active {
+            color: $colour-fifth;
+        }
     }
 }
 
@@ -143,9 +153,12 @@ a, button {
         grid-area: 2 / 5 / 4 / 6;
         align-self: center;
         text-align: right;
-        
         color: $colour-secondary;
+        a:active {
+            color: $colour-active;
+        }
     }
 }
+
 
 
