@@ -1,6 +1,14 @@
 @font-face {
-  font-family: "RedHatDisplay";
-  src: url("./fonts//RedHatText-Regular.otf");
+  font-family: "Red Hat Display Medium";
+  src: url("./fonts/RedHatDisplay-Medium.ttf");
+}
+@font-face {
+  font-family: "Red Hat Display Bold";
+  src: url("./fonts/RedHatDisplay-Bold.ttf");
+}
+@font-face {
+  font-family: "Red Hat Display Black";
+  src: url("./fonts/RedHatDisplay-Black.ttf");
 }
 *,
 *::after,
@@ -18,9 +26,10 @@ html {
 body {
   box-sizing: border-box;
   background: url("./images/pattern-background-desktop.svg") no-repeat, #e0e8ff;
+  background-size: contain;
   display: flex;
   justify-content: center;
-  font-family: "RedHatDisplay", Arial, Helvetica, sans-serif;
+  font-family: "Red Hat Display Medium", Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.7;
@@ -28,6 +37,8 @@ body {
 }
 
 h1, h2 {
+  font-family: "Red Hat Display Black", Arial, Helvetica, sans-serif;
+  font-size: 2.8rem;
   font-weight: 900;
   margin-top: 0px;
   padding-top: 0px;
@@ -39,8 +50,9 @@ h2 {
 }
 
 a, button {
+  font-family: "Red Hat Display Bold", Arial, Helvetica, sans-serif;
   font-weight: 700;
-  text-decoration: none;
+  font-size: 1.3rem;
 }
 
 .order-summ {
@@ -60,7 +72,7 @@ a, button {
   display: flex;
   flex-direction: column;
   margin-top: 0;
-  padding-top: 5.4rem;
+  padding-top: 4rem;
 }
 .order-summ__content h1 {
   line-height: 1;
@@ -69,11 +81,21 @@ a, button {
   padding: 2.4rem 0 2.4rem 0;
 }
 .order-summ .button {
-  margin-top: 3.2rem;
+  margin: 3.2rem 0 3.4rem 0;
+  border: none;
+  padding: 1.6rem 0 1.6rem 0;
+  border-radius: 10px;
+  background-color: #3829e0;
+  color: white;
+  box-shadow: 0px 15px 17px #c2d1ff;
+}
+.order-summ a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .plan-summary {
-  border-radius: 15px;
+  border-radius: 10px;
   display: grid;
   grid-template-columns: 24px 48px 20px max-content auto 24px;
   grid-template-rows: 24px 24px 24px 24px;
@@ -98,8 +120,7 @@ a, button {
   grid-area: 2/5/4/6;
   align-self: center;
   text-align: right;
-  font-size: 1.4rem;
-  color: #1f2f56;
+  color: #3829e0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "RedHatDisplay";
+  src: url("./fonts/RedHatDisplay-Medium.ttf");
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: url("./images/pattern-background-desktop.svg");
+  font-family: "RedHatDisplay", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.order-summ {
+  width: 945px;
+}
 
 /*# sourceMappingURL=style.css.map */
